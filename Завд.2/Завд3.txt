@@ -1,0 +1,204 @@
+warning off
+clc
+
+
+
+%%%%%%%%%%  Завдання №3  %%%%%%%%%%%%%%%%
+x=-3:0.1:3;
+x1 = -3:0.1:0;
+x2 = 0:0.1:3;
+
+%%%%%%%%%%  1.  %%%%%%%%%
+y1 = sin(x).*exp(-2*x);
+g11 = (1+(x1.^2))./sqrt(1+(x1.^4));
+g12 = (2*x2+((sin(x2).^2)./(2+x2)));
+plot(x, y1, 'r');
+hold on;
+plot(x1, g11, 'b');
+plot(x2, g12, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  2.  %%%%%%%%%
+y2 = ((1+(x.^2))./(1+2*(x.^2)));
+g21 = 3*sin(x1)-(cos(x1)).^2;
+g22 = 3*sqrt(1+(x2.^2));
+plot(x, y2, 'r');
+hold on;
+plot(x1, g21, 'b');
+plot(x2, g22, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  3.  %%%%%%%%%
+y3 = (2*(sin(x).^2)./(1+x.^2));
+g31 = (3*(x1.^2)./(1+x1.^2));
+g32 = sqrt(1+((2*x2)./(1+x2.^2)));
+plot(x, y3, 'r');
+hold on;
+plot(x1, g31, 'b');
+plot(x2, g32, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  4.  %%%%%%%%%
+y4 = ((2+cos(x))./(1+exp(2*x)));
+g41 = ((3+(sin(2*x1).^2))./(1+(cos(2*x1).^2)));
+g42 = 2*sqrt(1+2*x2);
+plot(x, y4, 'r');
+hold on;
+plot(x1, g41, 'b');
+plot(x2, g42, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  5.  %%%%%%%%%
+y5 = (1+exp(3*x)).^(1*4);
+g51 = (3+sin(x1))./(1+x1.^2);
+g52 = 2*(x2.^2).*(cos(x2).^2);
+plot(x, y5, 'r');
+hold on;
+plot(x1, g51, 'b');
+plot(x2, g52, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  6.  %%%%%%%%%
+y6 = (2+3*x)./(1+x+(x.^2));
+g61 = sqrt(1+2*(x1.^2)-(sin(x1).^2));
+g62 = (1+x2)./((2+exp(-0.1*x2)).^(1/3));
+plot(x, y6, 'r');
+hold on;
+plot(x1, g61, 'b');
+plot(x2, g62, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  7.  %%%%%%%%%
+y7 = (1+x)./(1+sqrt(2+x+(x.^2)));
+g71 = (1+x2)./(1+(cos(x2).^2));
+g72 = sqrt(1+(x1.^2));
+plot(x, y7, 'r');
+hold on;
+plot(x1, g71, 'b');
+plot(x2, g72, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  8.  %%%%%%%%%
+y8 = (1+x.*exp(-x))./(2+sqrt((x.^2)+(sin(x).^2)));
+g81 = (1+3*x2)./(2+((1+x2).^(1/3)));
+g82 = sqrt(1+abs(x1));
+plot(x, y8, 'r');
+hold on;
+plot(x1, g81, 'b');
+plot(x2, g82, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  9.  %%%%%%%%%
+y7 = (1+x)./(1+sqrt(2+x+(x.^2)));
+g71 = (1+x2)./(1+(cos(x2).^2));
+g72 = sqrt(1+(x1.^2));
+plot(x, y7, 'r');
+hold on;
+plot(x1, g71, 'b');
+plot(x2, g72, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  10.  %%%%%%%%%
+y10 = ((1+x.*exp(-x))./(2+(x.^2))).*(sin(x).^2);
+g101 = (1+x2)./(1+(cos(x2).^3));
+g102 = sqrt(1+abs(x1))./(2+abs(x1));
+plot(x, y10, 'r');
+hold on;
+plot(x1, g101, 'b');
+plot(x2, g102, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  11.  %%%%%%%%%
+y5 = (1+exp(3*x)).^(1*4);
+g51 = (3+sin(x1))./(1+x1.^2);
+g52 = 2*(x2.^2).*(cos(x2).^2);
+plot(x, y5, 'r');
+hold on;
+plot(x1, g51, 'b');
+plot(x2, g52, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  12.  %%%%%%%%%
+y6 = (2+3*x)./(1+x+(x.^2));
+g61 = sqrt(1+2*(x1.^2)-(sin(x1).^2));
+g62 = (1+x2)./((2+exp(-0.1*x2)).^(1/3));
+plot(x, y6, 'r');
+hold on;
+plot(x1, g61, 'b');
+plot(x2, g62, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  13.  %%%%%%%%%
+y1 = sin(x).*exp(-2*x);
+g11 = (1+(x1.^2))./sqrt(1+(x1.^4));
+g12 = (2*x2+((sin(x2).^2)./(2+x2)));
+plot(x, y1, 'r');
+hold on;
+plot(x1, g11, 'b');
+plot(x2, g12, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  14.  %%%%%%%%%
+y2 = ((1+(x.^2))./(1+2*(x.^2)));
+g21 = 3*sin(x1)-(cos(x1)).^2;
+g22 = 3*sqrt(1+(x2.^2));
+plot(x, y2, 'r');
+hold on;
+plot(x1, g21, 'b');
+plot(x2, g22, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
+
+%%%%%%%%%%  15.  %%%%%%%%%
+y3 = (2*(sin(x).^2)./(1+x.^2));
+g31 = (3*(x1.^2)./(1+x1.^2));
+g32 = sqrt(1+((2*x2)./(1+x2.^2)));
+plot(x, y3, 'r');
+hold on;
+plot(x1, g31, 'b');
+plot(x2, g32, 'b');
+xlabel('X');
+ylabel('Y');
+legend('y', 'g');
+hold off;
